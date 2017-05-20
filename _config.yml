@@ -1,7 +1,7 @@
 
 title: My Resume
-url: 'http://gnostrenoff/github.io/online-cv'
-baseurl: '/online-cv' #change it according to your repository name
+url: 'http://gnostrenoff/github.io/'
+baseurl: '' #change it according to your repository name
 
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
