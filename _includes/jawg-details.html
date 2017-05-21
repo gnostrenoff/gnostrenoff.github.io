@@ -1,0 +1,32 @@
+<h4>Projet</h4>
+  <p>Jawg est le résultat de deux années de R&D autour du monde de la cartographie. Il répond au besoin de map-as-a-service dans un marché occupé principalement par Google et Mapbox.
+  Ainsi, Jawg propose des cartes via son serveur de maps distribué, cartes à vos couleurs, permettant de gérer des buildings multi-étages, pour des affichages web, mobiles, raster ou vectoriels.
+  Jawg s'appuie notamment sur les données d'Openstreetmap, et pousse la communauté à atteindre son potentiel d'utilisation via la création d'outils Opensource à destination des contributeurs.</p>
+  <p>
+  Le projet se compose de divers sous-projets dont notamment:
+  <ul>
+  <li>Un serveur de tuiles</li>
+  <li>Une API rest permettant la gestion de jeux de données géolocalisés</li>
+  <li>Plusieurs Web Applications (Gestions de données, affichage de statistiques, customisation de style de carte)</li>
+  </ul>
+  <p>
+
+  <h4>Mission</h4>
+  <ul>
+  <li>Gestion des clés d'API le serveur de tuiles. Création d'une web application + un plugin sur un load balancer. L'objectif est de valider et de compter les requêtes entrantes, poser des restrictions sur des clés d'API (quota, clé temporaires) via une API rest.
+  Technologies: <strong>Java 8, Springboot, InfluxDB, Akka, AsynchHttpClient</strong>.</li>
+
+  <li>Création d'un module de statistiques au niveau du load balancer de tile-edge. Ce module sert a compter et catégoriser les requêtes (3 catégories : zoom, age et type). Ces informations sont régulièrement envoyées sur un InfluxDB.
+  Technologies : <strong>Java 8, Akka, InfluxDB</strong>.</li>
+
+  <li>Intégration continue : Docker et Jenkins. Création d'un job Jenkins pour chaque projet. Un job compile, teste et deploie une image docker.</li>
+
+  <li>Maintenance du Système d'Informations Géographiques de jawg qui permet de stocker et d'interroger de la donnée géo-référencée. API Spring Boot, propulsée par le JDK8.</li>
+
+  <li>Création de styles: raster et vectoriel en utilisant <strong>cartoCSS et mapbox-gl-js</strong>.</li>
+
+  <li>Création d'un registre de style : une API permettant de générer des styles (vectoriel et raster) en choisissant certains critères. Technologies : <strong>Java 8, Springboot, Cassandra, Freemarker</strong>.</li>
+  </ul>
+
+  <h4>Technologies et outils</h4>
+  <p>Node.js / Java 8 / Vertex / Netty / Spring Boot / vertx / PostgreSQL / cassandra / Docker /</p>

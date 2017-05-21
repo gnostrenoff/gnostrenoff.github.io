@@ -10,7 +10,8 @@
                         <div class="company">JCDecaux - Paris, France</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>2éme version des micro-services autour des vélos en libre service (VLS).</p>
+                      <!-- not collapsible for now -->
+                      {% include jcdecaux-details.html %}
                     </div><!--//details-->
                 </div><!--//item-->
 
@@ -20,10 +21,13 @@
                             <h3 class="job-title">Développeur Fullstack</h3>
                             <div class="time">Avril 2016 - Mars 2017</div>
                         </div><!--//upper-row-->
-                        <div class="company">Jawg Maps, Paris</div>
+                        <div class="company">Jawg Maps - Paris, France</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p><a href="#hook">Détails (coming soon !)</a></p>
+                        <p><a href="#jawg" data-toggle="collapse">Détails</a></p>
+                        <div id="jawg" class="collapse">
+                          {% include jawg-details.html %}
+                        </div>
                     </div><!--//details-->
                 </div><!--//item-->
 
@@ -33,7 +37,7 @@
                             <h3 class="job-title">Stagiaire</h3>
                             <div class="time">Février 2016 - Juillet 2016</div>
                         </div><!--//upper-row-->
-                        <div class="company">eBusiness Information, Paris</div>
+                        <div class="company">eBusiness Information - Paris, France</div>
                     </div><!--//meta-->
                     <div class="details">
                         <p><a href="#hook">Détails (coming soon !)</a></p>
@@ -46,11 +50,14 @@
                             <h3 class="job-title">Software Engineer</h3>
                             <div class="time">Aout 2014 - Aout 2015</div>
                         </div><!--//upper-row-->
-                        <div class="company">jNet Technology, San Jose, California</div>
+                        <div class="company">jNet Technology - San Jose, California</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p><a href="#hook">Détails (coming soon !)</a></p>
+                      <p><a href="#jnet" data-toggle="collapse">Détails</a></p>
+                      <div id="jnet" class="collapse">
+                        {% include jnet-details.html %}
+                      </div>
                     </div><!--//details-->
                 </div><!--//item-->
 
-            </section><!--//section-->
+</section><!--//section-->
