@@ -9,10 +9,18 @@
                         </div><!--//upper-row-->
                         <div class="company">JCDecaux - Paris, France</div>
                     </div><!--//meta-->
-                    <div class="details">
-                      <!-- not collapsible for now -->
-                      {% include jcdecaux-details.html %}
-                    </div><!--//details-->
+                    <div class="panel-group">
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#jcd">Détails</a>
+                          </h4>
+                        </div>
+                        <div id="jcd" class="panel-collapse collapse">
+                          <div class="panel-body">{% include jcdecaux-details.html %}</div>
+                        </div>
+                      </div>
+                    </div>
                 </div><!--//item-->
 
                 <div class="item">
@@ -23,12 +31,18 @@
                         </div><!--//upper-row-->
                         <div class="company">Jawg Maps - Paris, France</div>
                     </div><!--//meta-->
-                    <div class="details">
-                        <p><a href="#jawg" data-toggle="collapse">Détails</a></p>
-                        <div id="jawg" class="collapse">
-                          {% include jawg-details.html %}
+                    <div class="panel-group">
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#jawg">Détails</a>
+                          </h4>
                         </div>
-                    </div><!--//details-->
+                        <div id="jawg" class="panel-collapse collapse">
+                          <div class="panel-body">{% include jawg-details.html %}</div>
+                        </div>
+                      </div>
+                    </div>
                 </div><!--//item-->
 
                 <div class="item">
@@ -39,12 +53,18 @@
                         </div><!--//upper-row-->
                         <div class="company">jNet Technology - San Jose, California</div>
                     </div><!--//meta-->
-                    <div class="details">
-                      <p><a href="#jnet" data-toggle="collapse">Détails</a></p>
-                      <div id="jnet" class="collapse">
-                        {% include jnet-details.html %}
+                    <div class="panel-group">
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#jnet">Détails</a>
+                          </h4>
+                        </div>
+                        <div id="jnet" class="panel-collapse collapse">
+                          <div class="panel-body">{% include jnet-details.html %}</div>
+                        </div>
                       </div>
-                    </div><!--//details-->
+                    </div>
                 </div><!--//item-->
 
 </section><!--//section-->
